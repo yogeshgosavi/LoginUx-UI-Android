@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.title.*
 
 class LoginActivity : AppCompatActivity() {
@@ -17,7 +18,9 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
       //  myTitle.text = "Login"
        // getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title)
-
+        btnback.setOnClickListener {
+            this.finish()
+        }
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     fun setStatusBarGradiant(activity: Activity) {

@@ -5,15 +5,21 @@ import android.app.Activity
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.WindowManager
+import android.widget.Toolbar
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setStatusBarGradiant(this)
-
         setContentView(R.layout.activity_sign_up)
+        btnback.setOnClickListener {
+            this.finish()
+        }
+
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     fun setStatusBarGradiant(activity: Activity) {
@@ -26,4 +32,6 @@ class SignUpActivity : AppCompatActivity() {
             window.setBackgroundDrawable(background)
         }
     }
+
+
 }

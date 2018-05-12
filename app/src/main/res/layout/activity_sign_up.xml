@@ -6,7 +6,24 @@
     android:background="@drawable/gradient_color"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/myheading"
+            android:text="SIGN UP" />
 
+    </android.support.v7.widget.Toolbar>
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -14,7 +31,7 @@
         android:layout_height="424dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/shape_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -27,8 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/editText"
-            android:layout_marginTop="85dp"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="83dp"
             android:text="EMAIL/MOBILE" />
 
         <EditText
@@ -67,7 +84,6 @@
             android:layout_alignStart="@+id/editText2"
             android:layout_below="@+id/editText2"
             android:checked="true"
-            android:button="@drawable/checkbox_background"
             android:text=" Agree to our Terms &amp; conditions" />
 
         <ImageButton
@@ -83,12 +99,12 @@
 
         <TextView
             android:id="@+id/textView4"
+            style="@style/myText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/textView"
             android:layout_marginTop="21dp"
-            style="@style/myText"
             android:text="NAME" />
 
         <EditText
@@ -96,18 +112,18 @@
             android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/textView"
-            android:layout_alignStart="@+id/textView"
-            android:layout_marginBottom="-85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-82dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
             android:ems="10"
-            android:inputType="textPersonName"
-           android:drawableLeft="@drawable/ic_person_black_24dp" />
+            android:inputType="textPersonName" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="0dp"
         android:layout_height="184dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="64dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/shape_bottom"
@@ -126,7 +142,7 @@
             android:layout_margin="20dp"
             android:layout_marginBottom="14dp"
             android:background="@drawable/button_shape"
-            android:text="SIGN UP" />
+            android:text="Log in" />
 
         <TextView
             android:id="@+id/textView3"
@@ -134,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Doon't have an Account " />
+            android:text="Already have an account? " />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

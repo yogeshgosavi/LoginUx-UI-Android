@@ -8,15 +8,34 @@
     android:layout_weight="1"
     tools:context=".LoginActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+
+
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/myheading"
+            android:text="LOGIN" />
+
+    </android.support.v7.widget.Toolbar>
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
         android:layout_height="354dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintVertical_weight="0.5"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/shape_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,10 +104,9 @@
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="0dp"
-        app:layout_constraintVertical_weight="0.5"
 
         android:layout_height="184dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="112dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/shape_bottom"
@@ -117,4 +135,5 @@
             android:layout_centerInParent="true"
             android:text="Doon't have an Account " />
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

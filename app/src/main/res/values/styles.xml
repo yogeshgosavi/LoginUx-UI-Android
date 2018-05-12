@@ -65,4 +65,10 @@
         <item name="android:textColor">#ffffff</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
+
+    <style name="brandedCheckbox" >
+        <item name="android:colorAccent">#000000</item>
+        <item name="android:colorControlNormal">#6010C0</item>
+        <item name="android:colorControlActivated">#8870C0</item>
+    </style>
 </resources>
